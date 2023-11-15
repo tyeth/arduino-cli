@@ -371,9 +371,6 @@ func (b *Builder) Build() error {
 	b.libsDetector.PrintUsedAndNotUsedLibraries(buildErr != nil)
 	b.Progress.CompleteStep()
 
-	b.printUsedLibraries(b.libsDetector.ImportedLibraries())
-	b.Progress.CompleteStep()
-
 	if buildErr != nil {
 		return buildErr
 	}

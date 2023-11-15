@@ -162,8 +162,6 @@ func (l *SketchLibrariesDetector) PrintUsedAndNotUsedLibraries(sketchError bool)
 	} else {
 		l.logger.Info(res)
 	}
-	// todo why?? should we remove this?
-	time.Sleep(100 * time.Millisecond)
 }
 
 // IncludeFolders fixdoc
