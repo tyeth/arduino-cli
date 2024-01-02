@@ -61,7 +61,7 @@ jobs:
 
       - name: Output Version
         id: get-version
-        run: echo "version=$(task general:get-version)" >> $GITHUB_OUTPUT
+        run: echo "version=v$(task general:get-version)" >> $GITHUB_OUTPUT
 
       - name: Upload artifacts
         uses: actions/upload-artifact@v3
